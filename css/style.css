@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway:400,500');
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-position: center;
+    background: url(../images/hero-final-posta.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+li {
+    list-style-type: none;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+/*===============================
+            UTILITIES
+================================*/
+.my-title-green {
+    font-family: 'Comfortaa', cursive;
+    color: seagreen;
+}
+
+.tooltip-inner {
+    font-size: 16px;
+}
+
+/*===============================
+            NAVBAR
+================================*/
+nav {
+
+    transition: 0.7s;
+}
+
+.navbar-nav {
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.transparent {
+    background: #222;
+    transition: 0.7s;
+}
+
+/*===============================
+            BANNER
+================================*/
+#banner {
+    height: 98vh;
+    min-height: 500px;
+    background-color: transparent;
+}
+
+#banner .container {
+    height: 80vh;
+    min-height: 500px;
+    padding-top: 20vh;
+}
+
+
+
+#banner span#cap {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#banner h2 {
+    font-weight: lighter;
+}
+
+#banner img {
+    opacity: 0.8;
+}
+
+/*===============================
+            ABOUT
+================================*/
+#about {
+    background: #eee;
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+#about:before {
+    content: '';
+    width: 55%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    background: #eee;
+    transform: skewY(5deg);
+}
+
+#about:after {
+    content: '';
+    width: 55%;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background: #eee;
+    transform: skewY(-5deg);
+}
+
+#about .container img {
+    max-width: 250px;
+}
+
+#about ul {
+    max-width: 1000px;
+}
+
+#about ul li {
+    max-width: 500px;
+}
+
+/*===============================
+            PORTFOLIO
+================================*/
+#portfolio {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+}
+
+#portfolio h1 {
+    font-family: 'Comfortaa', cursive;
+}
+
+#portfolio .row .col-12 {
+    height: 200px;
+}
+
+#portfolio .row .col-12 .d-flex {
+    height: 100%;
+}
+
+#portfolio .row .col-12:nth-child(1) .d-flex {
+    background: url(../images/index-lambda.png) no-repeat center/cover;
+}
+
+#portfolio .row .col-12:nth-child(2) .d-flex {
+    background: url(../images/index-yelbo.png) no-repeat center/cover;
+}
+
+#portfolio .row .col-12:nth-child(3) .d-flex {
+    background: url(../images/index-wyat.png) no-repeat center/cover;
+}
+
+#portfolio .row .col-12:nth-child(4) .d-flex {
+    background: url(../images/index-portfolio.png) no-repeat center/cover;
+}
+
+
+.my-desc {
+    position: relative;
+    top: 10px;
+}
+
+.my-desc p {
+    padding: 8px;
+    padding-bottom: 0;
+}
+
+/*===============================
+            CONTACT
+================================*/
+#contact {
+    background: #222;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#contact h1 {
+    font-family: 'Comfortaa', cursive;
+    color: seagreen;
+}
+
+#contact .d-flex {
+    max-width: 700px;
+}
+
+#contact a {
+    opacity: 1;
+}
+
+/*===============================
+            FOOTER
+================================*/
+footer {
+    background: black;
+}
+
+footer p {
+    opacity: 0.9;
+    font-size: 16px !important;
+}
+
+/*===============================
+        RESPONSIVE QUERIES
+================================*/
+@media only screen and (max-width:1199px) {
+    #about {
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    nav {
+        background: #222 !important;
+    }
+
+    #banner img {
+        display: none;
+    }
+
+    #contact a {
+        opacity: 1 !important;
+    }
+    #about .d-flex {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    #about {
+        padding-top: 5rem;
+    }
+
+    #banner h1 {
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-height:600px) {
+    #banner .container {
+        padding-top: 10vh !important;
+    }
+}
